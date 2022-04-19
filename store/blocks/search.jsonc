@@ -63,6 +63,7 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#depBanner",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
@@ -78,6 +79,16 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
+  },
+  "flex-layout.row#depBanner": {
+    "children": [
+      "image#depbanner"
+    ]
+  },
+  "image#depbanner": {
+      "props": {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3756c026003087.5634e17a559dd.jpg"
+      }
   },
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]

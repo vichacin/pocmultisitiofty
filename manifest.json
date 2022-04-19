@@ -1,7 +1,7 @@
 {
-  "vendor": "tiendadevi",
+  "vendor": "pocmultisitiofty",
   "name": "store-theme",
-  "version": "5.1.3",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -21,6 +21,7 @@
     "vtex.styleguide": "9.x",
     "vtex.slider": "0.x",
     "vtex.carousel": "2.x",
+    "vtex.countdown": "0.x",
     "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
     "vtex.minicart": "2.x",
@@ -63,7 +64,8 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
-    "vtex.search": "2.x"
+    "vtex.search": "2.x",
+    "vtexarg.multisite-segment-results": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"

@@ -1,19 +1,24 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "multisite",
+      "conditionalSegmentBlock#banner1",
+      "conditionalSegmentBlock#banner2",
+      "conditionalSegmentBlock#banner3",
+      // "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
-      * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "stack-layout#cta",
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "__fold__.experimentalLazyAssets",
+      // "flex-layout.row#deals",
+      // "stack-layout#cta",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
       "info-card#link",
       "flex-layout.row#home-description",
-      "responsive-layout.desktop#desktop", 
+      "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
+      "__fold__",
       "rich-text#question",
       "rich-text#link",
       "rich-text#test",
@@ -22,20 +27,61 @@
       "newsletter"
     ]
   },
-
-  "stack-layout#cta": {
-    "children": [
-      "image#cta",
-      "link#cta"
-    ]
+  "conditionalSegmentBlock#banner1": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "1"
+    },
+    "children": ["image#banner1"]
   },
+  "conditionalSegmentBlock#banner2": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "2"
+    },
+    "children": ["image#banner2"]
+  },
+  "conditionalSegmentBlock#banner3": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "3"
+    },
+    "children": ["image#banner3"]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-1/numero-1-1.jpg",
+      "minWidth": "1%"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-2/numero-2-1.jpg",
+      "minWidth": "1%"
+    }
+  },
+  "image#banner3": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-3/numero-3-1.jpg",
+      "minWidth": "1%"
+    }
+  },
+  // "stack-layout#cta": {
+  //   "children": [
+  //     "image#cta",
+  //     "link#cta"
+  //   ],
+  //   "props":{
+  //     "blockClass": "call-to-action"
+  //   }
+  // },
 
   "image#cta": {
     "props": {
       "blockClass": "cover",
       "width": "100%",
       "height": 400,
-      "src": "https://images.unsplash.com/photo-1532152615924-48f75bc5fb46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      "src": "https://tiendadevi.vteximg.com.br/arquivos/home1.jpg"
     }
   },
 
@@ -51,24 +97,23 @@
     }
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
-    "props": {
-      "height": 720,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        }
-      ]
-    }
-  },
+  // "list-context.image-list#demo": {
+  //   "children": ["slider-layout#demo-images"],
+  //   "props": {
+  //     "height": 720,
+  //     "images": [
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+  //       },
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+  //       }
+  //     ]
+  //   }
+  // },
 
-  
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
@@ -95,9 +140,7 @@
 
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
-    "children": [
-      "slider-layout#demo-products"
-    ],
+    "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -169,5 +212,4 @@
       "id": "bottom"
     }
   }
-
 }
