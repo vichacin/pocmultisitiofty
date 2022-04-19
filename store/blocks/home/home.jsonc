@@ -1,10 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      // "multisite",
-      // "conditionalSegmentBlock#banner1",
-      // "conditionalSegmentBlock#banner2",
-      // "conditionalSegmentBlock#banner3",
+      "multisite",
+      "conditionalSegmentBlock#banner1",
+      "conditionalSegmentBlock#banner2",
+      "conditionalSegmentBlock#banner3",
       // "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -27,45 +27,45 @@
       "newsletter"
     ]
   },
-  // "conditionalSegmentBlock#banner1": {
-  //   "props": {
-  //     "segmentParameter": "productClusterIds",
-  //     "segmentValue": "1"
-  //   },
-  //   "children": ["image#banner1"]
-  // },
-  // "conditionalSegmentBlock#banner2": {
-  //   "props": {
-  //     "segmentParameter": "productClusterIds",
-  //     "segmentValue": "2"
-  //   },
-  //   "children": ["image#banner2"]
-  // },
-  // "conditionalSegmentBlock#banner3": {
-  //   "props": {
-  //     "segmentParameter": "productClusterIds",
-  //     "segmentValue": "3"
-  //   },
-  //   "children": ["image#banner3"]
-  // },
-  // "image#banner1": {
-  //   "props": {
-  //     "src": "https://dibujosycolores.com/numeros/numero-1/numero-1-1.jpg",
-  //     "minWidth": "1%"
-  //   }
-  // },
-  // "image#banner2": {
-  //   "props": {
-  //     "src": "https://dibujosycolores.com/numeros/numero-2/numero-2-1.jpg",
-  //     "minWidth": "1%"
-  //   }
-  // },
-  // "image#banner3": {
-  //   "props": {
-  //     "src": "https://dibujosycolores.com/numeros/numero-3/numero-3-1.jpg",
-  //     "minWidth": "1%"
-  //   }
-  // },
+  "conditionalSegmentBlock#banner1": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "1"
+    },
+    "children": ["image#banner1"]
+  },
+  "conditionalSegmentBlock#banner2": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "2"
+    },
+    "children": ["image#banner2"]
+  },
+  "conditionalSegmentBlock#banner3": {
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": "3"
+    },
+    "children": ["image#banner3"]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-1/numero-1-1.jpg",
+      "minWidth": "1%"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-2/numero-2-1.jpg",
+      "minWidth": "1%"
+    }
+  },
+  "image#banner3": {
+    "props": {
+      "src": "https://dibujosycolores.com/numeros/numero-3/numero-3-1.jpg",
+      "minWidth": "1%"
+    }
+  },
 
   // "stack-layout#cta": {
   //   "children": [

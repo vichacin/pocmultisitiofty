@@ -65,5 +65,8 @@
     "vtex.css-handles": "1.x",
     "vtex.search": "2.x"
   },
+  "peerDependencies": {
+    "vtexarg.multisite-segment-results": "1.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
