@@ -1,12 +1,44 @@
 .productHighlightWrapper--collection {
-  position: absolute;
-  top: 10px;
+  display: flex;
+  top:  5px;
+  margin-bottom: 5px;
   left: 5px;
   width: 200px;
 }
 
 .productHighlightText {
   background: antiquewhite;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 7px 10px;
 }
+
+.productHighlightText[data-highlight-id="137"]{
+  background: #00B941;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+
+.productHighlightText[data-highlight-id="138"]{
+  background: #004E6D;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+
+.productHighlightText[data-highlight-id="139"]{
+  background: #F71963;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+

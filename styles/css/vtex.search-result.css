@@ -20,3 +20,7 @@
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }
+.searchNotFoundInfo::before {
+  content: 'Pruebe buscando en otro marca oprimiendo la barra de arriba.';
+  margin-bottom: 5%;
+}

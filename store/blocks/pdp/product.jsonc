@@ -116,7 +116,9 @@
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
-      "flex-layout.row#buy-button",
+      "conditionalSegmentBlock#pdp-add-to-cart-button-Farmacity",
+      "conditionalSegmentBlock#pdp-add-to-cart-button-Simplicity",
+      "conditionalSegmentBlock#pdp-add-to-cart-button-GetTheLook",
       "availability-subscriber",
       "shipping-simulator",
       "share#default"
@@ -132,13 +134,52 @@
     ]
   },
 
-  "flex-layout.row#buy-button": {
-    "props": {
-      "marginTop": 4,
-      "marginBottom": 7
+    "conditionalSegmentBlock#pdp-add-to-cart-button-Farmacity": {
+      "children": ["flex-layout.row#pdpaddToCartFarmacity"],
+      "props": {
+        "segmentParameter": "productClusterIds",
+        "segmentValue": 137
+      }
     },
-    "children": ["add-to-cart-button"]
-  },
+
+    "conditionalSegmentBlock#pdp-add-to-cart-button-Simplicity": {
+      "children": ["flex-layout.row#pdpaddToCartSimplicity"],
+      "props": {
+        "segmentParameter": "productClusterIds",
+        "segmentValue": 138
+      }
+    },
+    "conditionalSegmentBlock#pdp-add-to-cart-button-GetTheLook": {
+      "children": ["flex-layout.row#pdpaddToCartGetTheLook"],
+      "props": {
+        "segmentParameter": "productClusterIds",
+        "segmentValue": 139
+      }
+    },
+    "flex-layout.row#pdpaddToCartFarmacity": {
+      "children": ["add-to-cart-button"],
+      "props": {
+        "blockClass": "addToCartButtonFarmacity",
+        "marginTop": 4,
+        "marginBottom": 7
+      }
+    },
+    "flex-layout.row#pdpaddToCartSimplicity": {
+      "children": ["add-to-cart-button"],
+      "props": {
+        "blockClass": "addToCartButtonSimplicity",
+        "marginTop": 4,
+        "marginBottom": 7
+      }
+    },
+    "flex-layout.row#pdpaddToCartGetTheLook": {
+      "children": ["add-to-cart-button"],
+      "props": {
+        "blockClass": "addToCartButtonGetTheLook",
+        "marginTop": 4,
+        "marginBottom": 7
+      }
+    },
 
   "flex-layout.row#product-availability": {
     "props": {

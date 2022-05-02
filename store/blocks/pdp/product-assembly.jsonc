@@ -3,7 +3,11 @@
     "props": {
       "position": "bottom"
     },
-    "children": ["flex-layout.row#buy-button"]
+    "children": [
+      "conditionalSegmentBlock#pdp-add-to-cart-button-Farmacity",
+      "conditionalSegmentBlock#pdp-add-to-cart-button-Simplicity",
+      "conditionalSegmentBlock#pdp-add-to-cart-button-GetTheLook"
+    ]
   },
   "product-assembly-options": {
     "children": [

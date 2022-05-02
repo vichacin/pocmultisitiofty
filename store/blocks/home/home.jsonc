@@ -22,8 +22,13 @@
       "rich-text#question",
       "rich-text#link",
       "rich-text#test",
-      "slider-layout#home",
+      "conditionalSegmentBlock#slider-layout-brands-Farmacity",
+      "conditionalSegmentBlock#slider-layout-brands-Simplicity",
+      "conditionalSegmentBlock#slider-layout-brands-GetTheLook",
       // "tab-layout#home",
+      // "conditionalSegmentBlock#newsletter-Farmacity",
+      // "conditionalSegmentBlock#newsletter-Simplicity",
+      // "conditionalSegmentBlock#newsletter-GetTheLook",
       "newsletter"
     ]
   },
@@ -76,15 +81,15 @@
       "height": 650,
       "images": [
         {
-          "image": "https://pocmultisitiofty.vteximg.com.br/arquivos/banner-S1.png",
+          "image": "https://farmacityar.vteximg.com.br/arquivos/ids/217643/Simplicity_mobile_1500x660.jpg?v=637729286745200000",
           "description": "something something"
         },
         {
-          "image": "https://pocmultisitiofty.vteximg.com.br/arquivos/banner-S2.png",
+          "image": "https://www.tridimage.com/wp-content/uploads/2017/09/2_Simplicity.jpg",
           "description": "something something"
         },
         {
-          "image": "https://pocmultisitiofty.vteximg.com.br/arquivos/banner-S3.png",
+          "image": "https://farmacityar.vteximg.com.br/arquivos/ids/203053/simplicity_1500x660.jpg",
           "description": "something something"
         }
       ]

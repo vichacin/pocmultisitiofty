@@ -31,7 +31,6 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #00B941;
 }
 
 .container--question .strong {
@@ -45,7 +44,6 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #00B941;
 }
 
 .container--link .strong {
@@ -58,35 +56,4 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #00B941;
-}
-
-.container--title {
-  color: #c04a74;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.container--pink-text {
-  color: #c04a74;
-}
-
-@media only screen and (min-width: 640px) {
-  .container--question .strong {
-    font-size: 40px;
-    line-height: 3rem;
-  }
-
-  .container--about {
-    max-width: 85%;
-  }
-
-  .container--title {
-    font-size: 40px;
-    max-width: 60%;
-  }
-
-  .container--title .paragraph {
-    line-height: 1.3em;
-  }
 }
