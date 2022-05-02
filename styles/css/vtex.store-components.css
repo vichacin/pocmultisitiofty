@@ -1,9 +1,32 @@
-.notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
+/*.notificationBarContainer {
+  background-color: #00B941;
+  color: #fff;
   font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+  font-size: 16px;
+  text-decoration: none;
+}
+*/
+
+.notificationBarContainer--notificationBarHomeFarmacity {
+  background-color: #00B941;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+.notificationBarContainer--notificationBarHomeSimplicity {
+  background-color: #004E6D;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+.notificationBarContainer--notificationBarHomeGetTheLook {
+  background-color: #F71963;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .infoCardContainer--info-card-home {
@@ -21,7 +44,7 @@
 }
 
 .newsletter {
-  background-color: #03054e;
+  background-color: #00b941;
   max-width: 1528px;
   margin: 0 auto;
 }
@@ -75,7 +98,6 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
-
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {

@@ -10,6 +10,28 @@
   justify-content: space-around;
 }
 
+.flexRow--addToCartButtonFarmacity :global(.vtex-button) {
+  background: #00B941;
+  border-color:#00B941;
+  color: #fff;
+}
+
+.flexRow--addToCartButtonSimplicity :global(.vtex-button) {
+  background: #004E6D;
+  border-color:#004E6D;
+  color: #fff;
+}
+
+.flexRow--addToCartButtonGetTheLook :global(.vtex-button) {
+  background: #F71963;
+  border-color:#F71963;
+  color: #fff;
+}
+
+
+
+
+
 .flexRow--buyNowButton :global(.vtex-button) {
   background: #eef3f7;
   border-color:#eef3f7;

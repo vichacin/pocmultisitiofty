@@ -3,16 +3,61 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "flex-layout.col#productRating",
+      // "flex-layout.col#productRating",
       "product-summary-space",
       "product-summary-sku-selector",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
       "product-quantity",
       "product-installments#summary",
-      "add-to-cart-button"
+      //"add-to-cart-button"
+      "conditionalSegmentBlock#add-to-cart-button-Farmacity",
+      "conditionalSegmentBlock#add-to-cart-button-Simplicity",
+      "conditionalSegmentBlock#add-to-cart-button-GetTheLook"
     ]
   },
+
+  "conditionalSegmentBlock#add-to-cart-button-Farmacity": {
+    "children": ["flex-layout.row#addToCartFarmacity"],
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 137
+    }
+  },
+
+  "conditionalSegmentBlock#add-to-cart-button-Simplicity": {
+    "children": ["flex-layout.row#addToCartSimplicity"],
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 138
+    }
+  },
+  "conditionalSegmentBlock#add-to-cart-button-GetTheLook": {
+    "children": ["flex-layout.row#addToCartGetTheLook"],
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 139
+    }
+  },
+  "flex-layout.row#addToCartFarmacity": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "addToCartButtonFarmacity"
+    }
+  },
+  "flex-layout.row#addToCartSimplicity": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "addToCartButtonSimplicity"
+    }
+  },
+  "flex-layout.row#addToCartGetTheLook": {
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "addToCartButtonGetTheLook"
+    }
+  },
+
 
   "product-quantity": {
     "props": {
@@ -22,23 +67,18 @@
 
   "product-summary-sku-selector": {
     "props": {
-      "visibleVariations": [
-        "color",
-        "tamaño",
-        "talle",
-        "size"
-      ],
+      "visibleVariations": ["color", "tamaño", "talle", "size"],
       "showVariationsLabels": ["none"],
       "showValueForVariation": "all"
     }
   },
 
-  "flex-layout.col#productRating": {
-    "props": {
-      "blockClass": "productRating"
-    },
-    "children": ["product-rating-inline"]
-  },
+  // "flex-layout.col#productRating": {
+  //   "props": {
+  //     "blockClass": "productRating"
+  //   },
+  //   "children": ["product-rating-inline"]
+  // },
 
   "stack-layout#prodsum": {
     "children": [
@@ -103,9 +143,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }

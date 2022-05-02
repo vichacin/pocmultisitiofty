@@ -8,9 +8,11 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "conditionalSegmentBlock#notification-bar-Farmacity",
+      "conditionalSegmentBlock#notification-bar-Simplicity",
+      "conditionalSegmentBlock#notification-bar-GetTheLook",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#multisite"
     ]
   },
 
@@ -21,15 +23,47 @@
     }
   },
 
-  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+  "conditionalSegmentBlock#notification-bar-Farmacity": {
+    "children": ["notification.bar#homeFarmacity"],
     "props": {
-      "fullWidth": "true"
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 137
     }
   },
-  "notification.bar#home": {
+  "conditionalSegmentBlock#notification-bar-Simplicity": {
+    "children": ["notification.bar#homeSimplicity"],
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 138
+    }
+  },
+  "conditionalSegmentBlock#notification-bar-GetTheLook": {
+    "children": ["notification.bar#homeGetTheLook"],
+    "props": {
+      "segmentParameter": "productClusterIds",
+      "segmentValue": 139
+    }
+  },
+
+  "notification.bar#homeFarmacity": {
+    "props": {
+      "content": "Farmacity Con tu compra de $6.500 o más ¡Envío gratis a todo el país!",
+      "fullWidth": "true",
+      "blockClass": "notificationBarHomeFarmacity"
+    }
+  },
+  "notification.bar#homeSimplicity": {
+    "props": {
+      "content": "Simplicity Con tu compra de $6.500 o más ¡Envío gratis a todo el país!",
+      "fullWidth": "true",
+      "blockClass": "notificationBarHomeSimplicity"
+    }
+  },
+  "notification.bar#homeGetTheLook": {
+    "props": {
+      "content": "GetTheLook Con tu compra de $6.500 o más ¡Envío gratis a todo el país!",
+      "fullWidth": "true",
+      "blockClass": "notificationBarHomeGetTheLook"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -51,6 +85,7 @@
       "width": "grow"
     }
   },
+
   "sticky-layout#4-desktop": {
     "props": {
       "blockClass": "sticky-header"
@@ -74,7 +109,29 @@
       "locale-switcher",
       "login",
       "minicart.v2"
+      //"multisite"
     ]
+  },
+  "flex-layout.row#multisite": {
+    "children": ["multisite"],
+    "props": {
+      "blockClass": "sticky-header",
+      "fullWidth": "true"
+    }
+  },
+  "multisite": {
+    "props": {
+      "parameter": "productClusterIds",
+      "src1": "https://pocmultisitiofty.vteximg.com.br/arquivos/F_logo.png",
+      "alt1": "logo farmacity",
+      "idValue1": 137,
+      "src2": "https://pocmultisitiofty.vteximg.com.br/arquivos/S_logo.png",
+      "alt2": "logo simplicity",
+      "idValue2": 138,
+      "src3": "https://pocmultisitiofty.vteximg.com.br/arquivos/L_logo.png",
+      "alt3": "logo get the look",
+      "idValue3": 139
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
