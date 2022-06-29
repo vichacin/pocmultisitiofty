@@ -21,6 +21,6 @@
   border-bottom: 1px #E7E9EE solid;
 }
 .searchNotFoundInfo::before {
-  content: 'Pruebe buscando en otro marca oprimiendo la barra de arriba.';
+  content: 'Pruebe buscando en otra marca oprimiendo la barra de arriba.';
   margin-bottom: 5%;
 }

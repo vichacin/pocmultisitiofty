@@ -138,7 +138,8 @@
       "children": ["flex-layout.row#pdpaddToCartFarmacity"],
       "props": {
         "segmentParameter": "productClusterIds",
-        "segmentValue": 137
+        "segmentValue": 137,
+        "isDefault": true
       }
     },
 
@@ -146,16 +147,19 @@
       "children": ["flex-layout.row#pdpaddToCartSimplicity"],
       "props": {
         "segmentParameter": "productClusterIds",
-        "segmentValue": 138
+        "segmentValue": 138,
+        "isDefault": false
       }
     },
     "conditionalSegmentBlock#pdp-add-to-cart-button-GetTheLook": {
       "children": ["flex-layout.row#pdpaddToCartGetTheLook"],
       "props": {
         "segmentParameter": "productClusterIds",
-        "segmentValue": 139
+        "segmentValue": 139,
+        "isDefault": false
       }
     },
+    
     "flex-layout.row#pdpaddToCartFarmacity": {
       "children": ["add-to-cart-button"],
       "props": {

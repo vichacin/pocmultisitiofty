@@ -50,7 +50,28 @@
 
 .newsletter .container {
   padding: 60px 10px;
+}
+
+.newsletter .container--notificationBarHomeFarmacity {
   background-color: #00B941;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+.newsletter .container--notificationBarHomeSimplicity {
+  background-color: #004E6D;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+.newsletter .container--notificationBarHomeGetTheLook {
+  background-color: #F71963;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .label {

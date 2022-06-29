@@ -153,17 +153,7 @@
   "search-content": {
     "blocks": ["gallery", "not-found"]
   },
-  "not-found":{
-    "blocks": ["rich-text#test5"]
-   },
-   "rich-text#test5": {
-     "props": {
-       "textAlignment": "CENTER",
-       "textPosition": "CENTER",
-       "text": "**test5**",
-       "font": "t-heading-1"
-     }
-   },
+
   "search-result-layout.mobile": {
     "children": [
       "flex-layout.row#searchinfomobile",
@@ -229,7 +219,7 @@
     }
   },
   "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "rich-text#test2", "flex-layout.row#notfound"]
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
   },
 
   "flex-layout.row#notfound": {
@@ -238,13 +228,13 @@
       "fullWidth": true
     }
   },
-  "rich-text#test2": {
-    "props": {
-      "text": "test2",
-      "textColor": "c-auto",
-      "blockClass": "layout-option"
-    }
-  },
+  // "rich-text#test2": {
+  //   "props": {
+  //     "text": "test2",
+  //     "textColor": "c-auto",
+  //     "blockClass": "layout-option"
+  //   }
+  // },
   "breadcrumb": {
     "props": {
       "showOnMobile": true
